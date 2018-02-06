@@ -11,12 +11,15 @@ import { RouterModule } from '@angular/router';
 import { ChartComponent } from './components/chart/chart.component';
 import { ChartModule } from './components/chart/chart.module';
 import { LoginComponent } from './components/login/login.component';
+import { LayoutComponent } from './components/layout/layout.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    LoginComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,

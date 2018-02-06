@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, transition } from '@angular/core';
 import { Router } from "@angular/router";
+import { BoundElementPropertyAst } from '@angular/compiler';
 
 @Component({
   selector: 'app-login',
@@ -7,6 +8,7 @@ import { Router } from "@angular/router";
   styleUrls: []
 })
 export class LoginComponent implements OnInit {
+   
 
   constructor(private router : Router) { }
 
@@ -15,7 +17,13 @@ export class LoginComponent implements OnInit {
 
   login(){
     console.log("Login works");
+    Logged = true;
     this.router.navigate(['/dashboard']);
   }
 
+ 
 }
+
+export var Logged:boolean;
+
+
