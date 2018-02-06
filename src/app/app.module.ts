@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app.routing';
 import { RouterModule } from '@angular/router';
 import { ChartComponent } from './components/chart/chart.component';
 import { ChartModule } from './components/chart/chart.module';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({

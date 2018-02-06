@@ -5,7 +5,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 const routes: Routes =[
-    { path: 'dashboard',      component: DashboardComponent }
+  { path: '',               redirectTo: 'dashboard', pathMatch: 'full' },
+  { path: 'dashboard',      component: DashboardComponent }
     // { path: 'user-profile',   component: UserProfileComponent },
     // { path: 'table-list',     component: TableListComponent },
     // { path: 'typography',     component: TypographyComponent },
@@ -13,7 +14,7 @@ const routes: Routes =[
     // { path: 'maps',           component: MapsComponent },
     // { path: 'notifications',  component: NotificationsComponent },
     // { path: 'upgrade',        component: UpgradeComponent },
-    // { path: '',               redirectTo: 'dashboard', pathMatch: 'full' }
+    
 ];
 
 @NgModule({
